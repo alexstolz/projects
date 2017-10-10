@@ -46,6 +46,10 @@ class LSM9DS1:
     SCALE_GYRO = [(245,0),(500,1),(2000,3)]
     SCALE_ACCEL = [(2,0),(4,2),(8,3),(16,1)]
 
+    """
+    address_gyro = 30 if pulled high, 106 else
+    address_magnet = 107 if pulled high, 28 else
+    """
     def __init__(self, i2c=None, address_gyro=30, address_magnet=107):
         self.i2c = i2c
         self.address_gyro = address_gyro
