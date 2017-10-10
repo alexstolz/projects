@@ -27,21 +27,21 @@ Example usage:
 import array
 
 class LSM9DS1:
-    WHO_AM_I = 0xf
-    CTRL_REG1_G = 0x10
-    INT_GEN_SRC_G = 0x14
-    OUT_TEMP = 0x15
-    OUT_G = 0x18
-    CTRL_REG4_G = 0x1e
+    WHO_AM_I = const(0xf)
+    CTRL_REG1_G = const(0x10)
+    INT_GEN_SRC_G = const(0x14)
+    OUT_TEMP = const(0x15)
+    OUT_G = const(0x18)
+    CTRL_REG4_G = const(0x1e)
 
-    STATUS_REG = 0x27
-    OUT_XL = 0x28
-    FIFO_CTRL_REG = 0x2e
-    FIFO_SRC = 0x2f
+    STATUS_REG = const(0x27)
+    OUT_XL = const(0x28)
+    FIFO_CTRL_REG = const(0x2e)
+    FIFO_SRC = const(0x2f)
 
-    OFFSET_REG_X_M = 0x05
-    CTRL_REG1_M = 0x20
-    OUT_M = 0x28
+    OFFSET_REG_X_M = const(0x05)
+    CTRL_REG1_M = const(0x20)
+    OUT_M = const(0x28)
 
     SCALE_GYRO = [(245,0),(500,1),(2000,3)]
     SCALE_ACCEL = [(2,0),(4,2),(8,3),(16,1)]
